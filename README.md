@@ -16,8 +16,8 @@ heat map, and an interactive bar chart.
 - 🔠 **Microsoft Excel**: Used PowerQuery to extract and transform data efficiently. Used filters, and Power Pivot to identify
 - 📈 **Data Analysis**:
 - 📊 **Data Visualisation**:
-- 🧼 **Data Cleaning**: Split and combined datasets together, performed data tidying procedures to reformat datasets for database integration, scanned for missing values, errors and inconsistencies.
-- 📩 **Data Retrieval**: Identified suitable dataset of interest, downloaded data into viable format, and used Power Query operations to prepare dataset for the project.
+- 🧼 **Data Cleaning**: 
+- 📧 **Data Retrieval**: Identified suitable dataset of interest, downloaded data into viable format, and used Power Query operations to prepare dataset for the project.
 - 📐 **Problem-Solving**:
 - 🔍 **Attention to Detail**:
 - 🔬 **Research/Self-Learning**: 
