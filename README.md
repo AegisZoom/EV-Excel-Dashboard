@@ -71,6 +71,21 @@ All data preprocessing, transformation, and feature changes are recorded in *Cle
 
 ## The Final Dashboard
 
+As a result of the various data cleaning and analyses undertook to understand the dataset, a dashboard was constructed to visualise how the market for electric vehicles varies across Washington. The dashboard is shown below as a static image. It is not to scale, the Excel dashboard's proportions are designed so that all text and visual elements are easy to see and discern.
 
+![Dashboard](https://github.com/AegisZoom/Electric-Vehicles-US/blob/main/Dashboard.PNG)
 
+In summarising information that the data stores to answer how electric vehicle adoptions varies across Washington, three separate questions were posited.
+
+**1. How does each county vary in electric vehicle adoption?**
+
+This is likely the most direct question the audience would ask in relation to the topic, and the most straightforward to answer. A choropleth map is employed, as it allows the audience to directly infer which areas of Washington are most receptive to electric vehicles. 
+
+**2. How does each brand vary in electric vehicle adoption?**
+
+A
+
+**3. Which brands see the most success in each area of Washington?**
+
+A
 
