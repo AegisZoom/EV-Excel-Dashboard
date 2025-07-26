@@ -33,22 +33,34 @@ Contains information from [State of Washington Open Data](https://data.wa.gov/),
 
 The following features were included in the original dataset, along with explanations of their meaning. Features marked with * were not used for the project and were discarded, while features marked with ^ were used for preprocessing and analysis but were removed in the final version to satisfy GitHub's file size constraints.
 
-- **VIN (1-10)** *[TEXT]*: Vehicle Identification Number - Used to identify different vehicle models (not unique per record)
+- **VIN (1-10)^** *[TEXT]*: Vehicle Identification Number - Used to identify different vehicle models (not unique per record)
 - **County** *[TEXT]*: The terriory that outlines a political division in a state of the US where the vehicle was registered
-- **City** *[TEXT]*: The town where the vehicle was registered
-- **State** *[TEXT]*: The US State where the vehicle was registered. It should only be Washington, but other states also appear.
-- **Postal Code** *[INTEGER]*: The postal code of the town where the vehicle was registered
-- **Model Year** *[INTEGER]*: The year the registered vehicle was constructed (1999-2025)
+- **City^** *[TEXT]*: The town where the vehicle was registered
+- **State^** *[TEXT]*: The US State where the vehicle was registered. It should only be Washington, but other states also appear.
+- **Postal Code^** *[INTEGER]*: The postal code of the town where the vehicle was registered
+- **Model Year^** *[INTEGER]*: The year the registered vehicle was constructed (1999-2025)
 - **Make** *[TEXT]*: The company that constructed the registered vehicle
 - **Model** *[TEXT]*: The specific model of the registered vehicle
-- **Electric Vehicle Type** *[TEXT]*: Battery Electric Vehicle (BEV) vs Plug-In Hybrid (PHEV)
-- **Clean Alternative Fuel Vehicle (CAFV) Eligibility** *[TEXT]*: Indicates if it benefits in renewable scheme from satisfying renewable sources and sufficient battery range.
-- **Electric Range** *[INTEGER]*: The distance the vehicle can travel (miles) on one full battery charge
-- **Base MSRP** *[INTEGER]*: Manufacturer's Suggested Retail Price
-- **Legislative District** *[INTEGER]*: The group of counties that share the legislative district for vehicle legislation.
+- **Electric Vehicle Type^** *[TEXT]*: Battery Electric Vehicle (BEV) vs Plug-In Hybrid (PHEV)
+- **Clean Alternative Fuel Vehicle (CAFV) Eligibility^** *[TEXT]*: Indicates if it benefits in renewable scheme from satisfying renewable sources and sufficient battery range.
+- **Electric Range*** *[INTEGER]*: The distance the vehicle can travel (miles) on one full battery charge
+- **Base MSRP*** *[INTEGER]*: Manufacturer's Suggested Retail Price
+- **Legislative District^** *[INTEGER]*: The group of counties that share the legislative district for vehicle legislation.
 - **DOL Vehicle ID** *[INTEGER]*: Washington State Department of Licensing ID (Unique per record, can use as ID column)
-- **Vehicle Location** *[GEOPOINT]*: Geospatial coordinates of the registration of the vehicle
-- **Electric Utility** *[TEXT]*: Supplier of Energy in location of registration
-- **2020 Census Tract** *[INTEGER]*: Likely some ID that uniquely identifies Electric Utility values
+- **Vehicle Location^** *[GEOPOINT]*: Geospatial coordinates of the registration of the vehicle
+- **Electric Utility*** *[TEXT]*: Supplier of Energy in location of registration
+- **2020 Census Tract*** *[INTEGER]*: Likely some ID that uniquely identifies Electric Utility values
 
-##
+Of the features that remained in the final file:
+
+**DOL Vehicle ID** -> **DOL_ID**
+
+**County** -> **County**
+
+**Make** -> **Manufacturer**
+
+**Model** -> **Model**
+
+## Data Cleaning
+
+
