@@ -51,7 +51,7 @@ The following features were included in the original dataset, along with explana
 - **Electric Utility*** *[TEXT]*: Supplier of Energy in location of registration
 - **2020 Census Tract*** *[INTEGER]*: Likely some ID that uniquely identifies Electric Utility values
 
-Of the features that remained in the final file:
+Of the features that remained in the final file and changes to their name:
 
 **DOL Vehicle ID** -> **DOL_ID**
 
