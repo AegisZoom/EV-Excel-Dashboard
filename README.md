@@ -65,7 +65,11 @@ Of the features that remained in the final file and changes to their name:
 
 All data preprocessing, transformation, and feature changes are recorded in *Cleaning Log.xlsx*. Processes ranged from simple checks like missing values, duplicates, and sanity checks, to multivariate scatter plot analysis. An example of a multivariate scatter plot is shown below to illustrate checks for multivariate location anomalies.
 
-![CountyScatter](https://github.com/AegisZoom/Electric-Vehicles-US/CountyScatter.PNG)
+![CountyScatter](https://github.com/AegisZoom/Electric-Vehicles-US/blob/main/CountyScatter.PNG)
+
+*Note: If I were using Python or R, then checks for multivariate outliers between counties and locations would be as simple as checking if each point resides in the geographic polygon of their specified states. Unfortunately, this cannot be done in Excel, so this manual approach was used.
+
+## The Final Dashboard
 
 
 
