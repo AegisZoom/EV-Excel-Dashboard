@@ -63,4 +63,8 @@ Of the features that remained in the final file and changes to their name:
 
 ## Data Cleaning
 
+All data preprocessing, transformation, and feature changes are recorded in *Cleaning Log.xlsx*. Processes ranged from simple checks like missing values, duplicates, and sanity checks, to multivariate scatter plot analysis. An example of a multivariate scatter plot is shown below to illustrate checks for multivariate location anomalies.
+
+
+
 
