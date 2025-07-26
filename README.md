@@ -31,24 +31,24 @@ State of Washington (2025), *Electriv Vehicle Population Data* [data set], Data 
 
 Contains information from [State of Washington Open Data](https://data.wa.gov/), which is made available here under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/).
 
-The following features were included in this dataset, along with explanations of their meaning. Features marked with * were not used for the project and were discarded, while features marked with ^ were used for preprocessing and analysis but were removed in the final version to satisfy GitHub's file size constraints.
+The following features were included in the original dataset, along with explanations of their meaning. Features marked with * were not used for the project and were discarded, while features marked with ^ were used for preprocessing and analysis but were removed in the final version to satisfy GitHub's file size constraints.
 
-- VIN (1-10) | (Text): Vehicle Identification Number - Used to identify different vehicle models (not unique per record) [REMOVE]
-- County | (Text/Factor): The terriory that outlines a political division in a state of the US where the vehicle was registered
-- City | (Text): The town where the vehicle was registered
-- State | (Text/Factor): The US State where the vehicle was registered. It should only be Washington, but other states also appear.
-- Postal Code | (Integer): The postal code of the town where the vehicle was registered
-- Model Year | (Integer): The year the registered vehicle was constructed (1999-2025)
-- Make | (Text/Factor): The company that constructed the registered vehicle
-- Model | (Text): The specific model of the registered vehicle
-- Electric Vehicle Type | (Text/Factor): Battery Electric Vehicle (BEV) vs Plug-In Hybrid (PHEV)
-- Clean Alternative Fuel Vehicle (CAFV) Eligibility | (Text/Factor): Indicates if it benefits in renewable scheme from satisfying renewable sources and sufficient battery range.
-- Electric Range | (Integer): The distance the vehicle can travel (miles) on one full battery charge
-- Base MSRP | (Integer): Manufacturer's Suggested Retail Price [REMOVE]
-- Legislative District | (Integer/Factor): The group of counties that share the legislative district for vehicle legislation.
-- DOL Vehicle ID | (Integer): Washington State Department of Licensing ID (Unique per record, can use as ID column)
-- Vehicle Location | (Geo Point): Geospatial coordinates of the registration of the vehicle
-- Electric Utility | (Text): Supplier of Energy in location of registration
-- 2020 Census Tract | (Integer): Likely some ID that uniquely identifies Electric Utility values [REMOVE]
+- **VIN (1-10)** *[TEXT]*: Vehicle Identification Number - Used to identify different vehicle models (not unique per record)
+- **County** *[TEXT]*: The terriory that outlines a political division in a state of the US where the vehicle was registered
+- **City** *[TEXT]*: The town where the vehicle was registered
+- **State** *[TEXT]*: The US State where the vehicle was registered. It should only be Washington, but other states also appear.
+- **Postal Code** *[INTEGER]*: The postal code of the town where the vehicle was registered
+- **Model Year** *[INTEGER]*: The year the registered vehicle was constructed (1999-2025)
+- **Make** *[TEXT]*: The company that constructed the registered vehicle
+- **Model** *[TEXT]*: The specific model of the registered vehicle
+- **Electric Vehicle Type** *[TEXT]*: Battery Electric Vehicle (BEV) vs Plug-In Hybrid (PHEV)
+- **Clean Alternative Fuel Vehicle (CAFV) Eligibility** *[TEXT]*: Indicates if it benefits in renewable scheme from satisfying renewable sources and sufficient battery range.
+- **Electric Range** *[INTEGER]*: The distance the vehicle can travel (miles) on one full battery charge
+- **Base MSRP** *[INTEGER]*: Manufacturer's Suggested Retail Price
+- **Legislative District** *[INTEGER]*: The group of counties that share the legislative district for vehicle legislation.
+- **DOL Vehicle ID** *[INTEGER]*: Washington State Department of Licensing ID (Unique per record, can use as ID column)
+- **Vehicle Location** *[GEOPOINT]*: Geospatial coordinates of the registration of the vehicle
+- **Electric Utility** *[TEXT]*: Supplier of Energy in location of registration
+- **2020 Census Tract** *[INTEGER]*: Likely some ID that uniquely identifies Electric Utility values
 
 ##
