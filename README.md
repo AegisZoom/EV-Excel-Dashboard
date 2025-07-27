@@ -92,5 +92,7 @@ This question is a union of the two previous questions, and was the most difficu
 
 # Files and Specifications
 
+In this repository, the only two files of interest are *EV Dashboard.zip* and *Cleaning Log.xlsx*. The former when unzipped contains the dashboard and relevant data used. The latter lists all data preprocessing procedures undertaken to cleanse the dataset of errors before use.
 
+Note that *CountyScatter.PNG* and *Dashboard.PNG* are simple image files used to populate the repository description.
 
