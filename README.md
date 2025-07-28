@@ -71,26 +71,26 @@ All data preprocessing, transformation, and feature changes are recorded in *Cle
 
 ## The Final Dashboard
 
-As a result of the various data cleaning and analyses undertook to understand the dataset, a dashboard was constructed to visualise how the market for electric vehicles varies across Washington. The dashboard is shown below as a static image. It is not to scale, the Excel dashboard's proportions are designed so that all text and visual elements are easy to see and discern.
+As a result of the rigorous data cleaning and analysis procedures undertaken, a dashboard was constructed to visualise how the market for electric vehicles varies across Washington. The dashboard is shown below as a static image. It is not to scale, in reality the dashboard's proportions are designed so that all text and visual elements are easy to see and discern across the full width of the screen, with no need for tabs or scrolling.
 
 ![Dashboard](https://github.com/AegisZoom/Electric-Vehicles-US/blob/main/Dashboard.PNG)
 
-In summarising information that the data stores to answer how electric vehicle adoptions varies across Washington, three separate questions were posited.
+Three separate questions were posited during the design phase of the dashboard that directed its intended objective, as well as the best visual elements to use for that purpose.
 
-**1. How does each county vary in electric vehicle adoption?**
+**1. How does each area in Washington vary in electric vehicle adoption?**
 
-This is likely the most direct question the audience would ask in relation to the topic, and the most straightforward to answer. As such, it is positioned to the top-right of the dashboard as it will be the first area the audience would naturally look to. A choropleth map is employed, as it allows the audience to directly infer which areas of Washington are most receptive to electric vehicles. The colours used were of low saturation, as bright colours can be difficult or distracting, and the dashboard was designed to be direct in answering the question posed. Red was selected for high values and blue was selected for low values, as that aligns with natural human intuition and colour theory. Purple is used as a middle-ground to better enable visual comparison and contrast between different counties.
+This is likely the most direct question the audience would ask in relation to the topic, and the most straightforward to answer. As such, it is positioned to the top-right of the dashboard as it will be the first area the audience would naturally look to. A choropleth map is employed, as it allows the audience to directly infer which areas of Washington are most receptive to electric vehicles. The colours used were of low saturation, as bright colours can be difficult or distracting. Red was selected for high values and blue was selected for low values, as that aligns with natural human intuition and colour theory. Purple is used as a middle-ground to better enable visual comparison and contrast between different values.
 
 **2. How does each car brand and model vary in electric vehicle sales?**
 
-Another prominent and straightforward question, particular for those aiming to understand which brands and models are worth purchasing. Unlike the previous example, location is irrelevant to understanding this question. As such, this can easily be resolved using a bar graph. Due to the presence of the third question below, it was possible to take liberties and opt
+Another prominent and straightforward question, particular for those aiming to understand which brands and models are worth purchasing. Unlike the previous question, location is irrelevant to understanding this question. As such, this can easily be resolved using a bar graph. Due to the presence of the third question below, it was possible to take liberties and opt
 for an approach that compared car models under the same manufacturer to each other using interactive features, rather than creating a static comparison between different manufacturers. This allowed for the preventation of clutter and visual overload when comparing individual car model performance. A similar blue is used for the bar graph to the choropleth map to allow for visual harmony in the dashboard.
 
 **3. Which brands see the most success in each area of Washington?**
 
-This question is a union of the two previous questions, and was the most difficult to answer. Namely, map-based representations of data struggle to show multiple types of data and their differences between locations without overloading audiences with imagery and generating confusion. As a result, instead of creating a geographical map, a heat map was used. The advantage was that it was not only easy but also precise to compare between two different combinations of county and brand, and natureally set up for further exploration using the other two visualisations. As such, it made sense to position this to the right of the dashboard as the secondary chronological experience for audiences, while its size also demosntrated its importance to the function of the dashboard.
+This question is a union of the two previous questions, and was the most difficult to answer. Map-based representations of data struggle to show multiple simultaneous comparisons between locations without overloading audiences with imagery and generating confusion. As a result, instead of creating a geographical map, a heat map was used. The advantage was that it was easy and precise to compare different combinations of counties and manufacturers, and naturally set up for further exploration using the other two visualisations. As such, it made sense to position this to the right side of the dashboard as the secondary chronological experience for audiences. Its size also demonstrated its importance to the dashboard.
 
-# Files and Specifications
+## Files and Specifications
 
 In this repository, the only two files of interest are *EV Dashboard.zip* and *Cleaning Log.xlsx*. The former when unzipped contains the dashboard and relevant data used. The latter lists all data preprocessing procedures undertaken to cleanse the dataset of errors before use.
 
