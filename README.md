@@ -25,33 +25,33 @@ Appropriately used visualisations and colours to present relevant information cl
 
 ## Data Retrieval
 
-I first encountered this dataset when I was looking for a suitable example to use in an assessment during my studies. Unfortunately it lacked the complexity to satisfy all elements of the rubric for the assessment, but I always had an interest to investigate it. In 2025 I made use of this dataset for my personal Excel project, and it had been updated with 2025 data. I formally reference and acknowledge the dataset below.
+I first encountered this dataset when I was looking for a suitable example to use in an assessment during my studies. Unfortunately it lacked the complexity to satisfy all elements of the rubric for the assessment, but I retained an interest in it and decided to analyse it outside of my studies. Because I started this personal analysis in 2025, it had been updated with 2025 data. I formally reference and acknowledge the dataset below.
 
-State of Washington (2025), *Electriv Vehicle Population Data* [data set], Data Gov website, accessed 13/03/2025. [https://catalog.data.gov/dataset/electric-vehicle-population-data](https://catalog.data.gov/dataset/electric-vehicle-population-data)
+State of Washington (2025), *Electric Vehicle Population Data* [data set], Data Gov website, accessed 13/03/2025. [https://catalog.data.gov/dataset/electric-vehicle-population-data](https://catalog.data.gov/dataset/electric-vehicle-population-data)
 
-Contains information from [State of Washington Open Data](https://data.wa.gov/), which is made available here under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/).
+*Contains information from [State of Washington Open Data](https://data.wa.gov/), which is made available here under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/).*
 
-The following features were included in the original dataset, along with explanations of their meaning. Features marked with * were not used for the project and were discarded, while features marked with ^ were used for preprocessing and analysis but were removed in the final version to satisfy GitHub's file size constraints.
+The following features of the original dataset are listed and explained below. Features marked with * were not used for the project and were discarded, while features marked with ^ were used for preprocessing and analysis but were removed in the final version to satisfy GitHub's file size constraints.
 
 - **VIN (1-10)^** *[TEXT]*: Vehicle Identification Number - Used to identify different vehicle models (not unique per record)
-- **County** *[TEXT]*: The terriory that outlines a political division in a state of the US where the vehicle was registered
+- **County** *[TEXT]*: The territory that outlines a political division in a state of the US where the vehicle was registered
 - **City^** *[TEXT]*: The town where the vehicle was registered
 - **State^** *[TEXT]*: The US State where the vehicle was registered. It should only be Washington, but other states also appear.
 - **Postal Code^** *[INTEGER]*: The postal code of the town where the vehicle was registered
-- **Model Year^** *[INTEGER]*: The year the registered vehicle was constructed (1999-2025)
+- **Model Year^** *[INTEGER]*: The year the registered vehicle was designed (1999-2025)
 - **Make** *[TEXT]*: The company that constructed the registered vehicle
 - **Model** *[TEXT]*: The specific model of the registered vehicle
 - **Electric Vehicle Type^** *[TEXT]*: Battery Electric Vehicle (BEV) vs Plug-In Hybrid (PHEV)
-- **Clean Alternative Fuel Vehicle (CAFV) Eligibility^** *[TEXT]*: Indicates if it benefits in renewable scheme from satisfying renewable sources and sufficient battery range.
+- **Clean Alternative Fuel Vehicle (CAFV) Eligibility^** *[TEXT]*: Indicates if the vehicle is eligibile for the American renewable scheme, which requires operating on renewable energy sources while satisfying an electric range threshold.
 - **Electric Range*** *[INTEGER]*: The distance the vehicle can travel (miles) on one full battery charge
 - **Base MSRP*** *[INTEGER]*: Manufacturer's Suggested Retail Price
-- **Legislative District^** *[INTEGER]*: The group of counties that share the legislative district for vehicle legislation.
+- **Legislative District^** *[INTEGER]*: The group of counties that share the legislative district for vehicle legislation
 - **DOL Vehicle ID** *[INTEGER]*: Washington State Department of Licensing ID (Unique per record, can use as ID column)
-- **Vehicle Location^** *[GEOPOINT]*: Geospatial coordinates of the registration of the vehicle
-- **Electric Utility*** *[TEXT]*: Supplier of Energy in location of registration
+- **Vehicle Location^** *[GEOPOINT]*: Geospatial coordinates of where the vehicle was registrated
+- **Electric Utility*** *[TEXT]*: Supplier of energy in the location where the vehicle was registrated
 - **2020 Census Tract*** *[INTEGER]*: Likely some ID that uniquely identifies Electric Utility values
 
-Of the features that remained in the final file and changes to their name:
+The features that remain in *Dashboard.zip* and their updated names are listed below:
 
 **DOL Vehicle ID** -> **DOL_ID**
 
@@ -63,11 +63,11 @@ Of the features that remained in the final file and changes to their name:
 
 ## Data Cleaning
 
-All data preprocessing, transformation, and feature changes are recorded in *Cleaning Log.xlsx*. Processes ranged from simple checks like missing values, duplicates, and sanity checks, to multivariate scatter plot analysis. An example of a multivariate scatter plot is shown below to illustrate checks for multivariate location anomalies.
+All data preprocessing, transformation, and feature changes are recorded in *Cleaning Log.xlsx*. Processes ranged from simple checks of missing values, duplicates, and sanity checks, to pivot table generation and multivariate scatter plot analysis. An example of a multivariate scatter plot is shown below to illustrate checks for multivariate location anomalies.
 
 ![CountyScatter](https://github.com/AegisZoom/Electric-Vehicles-US/blob/main/CountyScatter.PNG)
 
-*Note: If I were using Python or R, then checks for multivariate outliers between counties and locations would be as simple as checking if each point resides in the geographic polygon of their specified states. Unfortunately, this cannot be done in Excel, so this manual approach was used.
+***Note**: If Python or R was used for this project instead, then checks for multivariate outliers between counties and locations would be as simple as checking if each point resides in the geographic polygon of their corresponding county. Unfortunately, this cannot be done in Excel, so this manual approach was used.*
 
 ## The Final Dashboard
 
